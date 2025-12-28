@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Fredoka";
+    src: url("../fonts/Fredoka.ttf") format("truetype");
+}
+.countdownTitle {
+    font-family: 'Arial', sans-serif;
+    color: #4A90E2;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 4000;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("../images/Background.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;   /* stack by default */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.furalityLogo {
+  width: min(90vw, 700px);
+  margin: 40px auto 20px;
+  display: block;
+
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  mask-image: radial-gradient(circle, black 70%, transparent 100%);
+}
+
+.countdownContainer {
+  margin: 10px auto 30px;
+}
+
+.countdownText {
+  font-family: 'Fredoka', sans-serif;
+  color: #fff;
+  font-size: clamp(20px, 5vw, 48px);
+  margin-bottom: 10px;
+}
+
+.countdownTimer {
+  font-family: 'Fredoka', sans-serif;
+  color: #fff;
+  font-size: clamp(28px, 7vw, 56px);
+}
+
+
+@media (max-width: 480px) {
+  .furalityLogo {
+    margin-top: 20px;
+  }
+
+  .countdownText {
+    margin-bottom: 6px;
+  }
+}
